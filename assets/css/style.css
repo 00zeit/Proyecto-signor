@@ -1,0 +1,221 @@
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#loader {
+    transition: opacity 0.5s ease;
+}
+
+.loader img {
+    width: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.img-logo {
+    width: 60px;
+    height: auto;
+}
+
+.bg-navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    margin-left: 10px;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #1d1d1d, #808080);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.btn-gradient-yellow {
+    background: linear-gradient(to right, #000000, yellow);
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.btn-gradient:hover,
+.btn-gradient.active {
+    background: linear-gradient(to right, #000000, #FFD700);
+    color: white;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #000000, #FFD700);
+    color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FFD700;
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFD700;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #000000;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 0 50px;
+}
+
+.hero-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #FFD700;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFD700;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+
+body {
+    background-color: black;
+}
+
+.form-container {
+    position: relative;
+}
+
+.form-content {
+    position: relative;
+    background: linear-gradient(to right, #000000, #1f1f1f);
+    padding: 30px;
+    border-radius: 10px;
+    border: 6px solid transparent;
+    border-image: linear-gradient(to right, black 30%, yellow 70%);
+    border-image-slice: 20;
+}
+
+.form-label {
+    color: white;
+}
+
+.form-label-wide {
+    width: 120px;
+}
+
+.form-control {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    background-color: white;
+}
+
+.btn-primary {
+    background-color: white;
+    color: black;
+}
+
+.label-form {
+    color: yellow;
+}
+
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    transform: translateY(-50%);
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
